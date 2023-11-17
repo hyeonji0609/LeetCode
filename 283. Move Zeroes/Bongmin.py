@@ -8,7 +8,7 @@ class Solution:
             nums.remove(0)
             nums.append(0)
         
-        """
-        runtime : 437 ms
-        memory : 17.8 MB
-        """
+"""
+runtime : 437 ms
+memory : 17.8 MB
+"""
