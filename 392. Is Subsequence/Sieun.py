@@ -19,7 +19,7 @@ class Solution:
                             break
 
         if "".join(char_list) == s:
-            result = TrueS
+            result = True
                     
         return result
 
