@@ -6,11 +6,11 @@ class Solution:
         if len(nums) == 1:
             return nums
         else :
-            sum_zero = nums.count(0)
-            for i in nums[:]:
+            sum_zero = nums.count(0) # 0의 갯수 세기
+            for i in nums[:]: 
                 if i == 0:
-    	            nums.remove(0)
-            nums.extend([0] * sum_zero)
+    	            nums.remove(0) # 0인 값들 리스트에서 remove
+            nums.extend([0] * sum_zero) # 0 갯수만큼 list 뒤에 추가
 
 """
 Runtime: 447 ms
