@@ -16,7 +16,7 @@ class Solution:
             # i가 모음 집합에 없으면 i는 1 증가
             elif s_list[i] not in vowel_set:
                 i += 1
-            # j가 모음 집합에 없으면 j는 1 증가
+            # j가 모음 집합에 없으면 j는 1 감소
             elif s_list[j] not in vowel_set:
                 j -= 1
         # 변경된 리스트 결과를 문자열로 변환
