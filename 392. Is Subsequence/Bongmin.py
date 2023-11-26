@@ -12,8 +12,3 @@ class Solution:
         except:
             return False
 
-
-
-        """
-        
-        """

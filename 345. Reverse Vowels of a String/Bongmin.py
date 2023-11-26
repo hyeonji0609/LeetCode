@@ -21,3 +21,7 @@ class Solution:
                 cor += ls[i]
         return cor
 
+'''
+runtime : 74 ms
+memory : 18 mb
+'''
