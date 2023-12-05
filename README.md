@@ -8,8 +8,8 @@ Coding test study solving 2 or 3 per week
     - [Hyeonji Jeong] 20231114_1768,1431
   
 2. 업로드 시 폴더 구성
-  - 폴더 명 : 문제번호. 문제 명
-    - ex) 1768. Merge Strings Alternately
+  - 폴더 명 : 주차_문제번호. 문제 명
+    - ex) 1_1768. Merge Strings Alternately
   - 문제 설명 파일 명 : 폴더 명과 동일
     - 문제 복붙해서 파일 하나 만들기
   - 파일 명 : 작성자명.py
