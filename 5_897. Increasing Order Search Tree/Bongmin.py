@@ -28,3 +28,38 @@ inorder(root)
 # 0은 root의 길이보다 짧고, root[0] != none이므로 if문안에서 돈다
 # stack에 0을 어펜드하고 index를 2 * 0 + 1 = 1, 1을 업데이트 한다.
 
+# ==================================
+# TreeNode inorder방식으로 푼 방법 # 공부하면서 풀었기 때문에 방식은 같습니다.
+# ==================================
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+class Solution:
+    def increasingBST(self, root: TreeNode) -> TreeNode:
+        
+        output_root = TreeNode(0)
+        self.current = output_root
+        
+        def inorder(node):
+            
+            if not node:
+                return None
+                
+            inorder(node.left)
+            
+            node.left = None
+            self.current.right = node
+            self.current = node
+            
+            inorder(node.right)
+            
+        inorder(root)
+        
+        return output_root.right
+
+        
