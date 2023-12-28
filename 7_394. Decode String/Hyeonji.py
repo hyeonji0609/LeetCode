@@ -1,3 +1,5 @@
+s = "2[abc]3[cd]ef"
+
 stack = []
 result = []
 
@@ -14,17 +16,8 @@ for i in list(s):
         stack.pop()
         bracket.append(stack.pop())
         result.append(int(bracket[::-1][0]) * str(''.join(bracket[::-1][1:])))
-        result.append(stack.pop())
+        stack.append(int(bracket[::-1][0]) * str(''.join(bracket[::-1][1:])))
 
-#         for k in stack :
-#             if k != '[':
-#                 result.append(stack.pop())
-#             else :
-#                 break
-#         result.append(int(bracket[::-1][0]) * str(''.join(bracket[::-1][1:])))
-
-        else :
-            stack.append(i)
-
-"""
-"""
+    else :
+        stack.append(i)
+print(''.join(result))
