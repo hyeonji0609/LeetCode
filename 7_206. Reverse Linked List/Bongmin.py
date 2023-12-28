@@ -32,3 +32,7 @@ class Solution:
             result = temp # 결과 변수에 임시 저장되어있는 것 자체를 저장
 
         return result
+'''
+Runtime : 36ms
+memory : 18.5mb
+'''
