@@ -37,3 +37,8 @@ class Solution:
             current = current.next
 
         return top
+
+'''
+runtime : 96ms 상위 95% ...
+memory : 19.9 mb # 하위 95%............
+'''
