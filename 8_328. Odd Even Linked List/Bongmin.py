@@ -64,19 +64,23 @@ class Solution:
             stack.append(head.val)  # 현재 값을 링크드 리스트에 넣기
             head = head.next # 다음 것에 연결하기
 
-        top = ListNode(stack[0])
-        current = top
-        # a.pop(안에 인덱스)
-        len_stack = len(stack)
-        for_iter = math.ceil(len_stack / 2)
+        top = ListNode(stack[0]) # top 설정
+        current = top 
+        
+        len_stack = len(stack) # stack의 길이 계산
+        for_iter = math.ceil(len_stack / 2) # 반복문 돌릴 것 계산 # 칠판 설명 필요..?
+        
         for i in range(for_iter):
+            # top이 설정되어 있기 때문에 0일때는 예외 처리
             if i == 0:
                 stack.pop(i)
                 continue
+            # 0이 아닐때는 아래와 같이 
             else:
                 current.next = ListNode(stack[i])
                 current = current.next
                 stack.pop(i)
+        # 팝 하고 스택에 남은것들 이어주기
         for i in range(len(stack)):
             current.next = ListNode(stack[i])
             current = current.next
