@@ -11,6 +11,7 @@ class Solution:
     
     
 '''
-Runtime : 294 ms
-memory : 19.1 mb
+Runtime : 294 ms 상위 80%..?
+memory : 19.1 mb 상위 5%
+런타임도 안좋고 메모리도 안좋다 2
 '''
