@@ -11,17 +11,19 @@ class Solution:
 
         odd = head
         even = head.next
-        
-        # 표 상에서 두 값이 None일 때 학습이 종료되어야 함 -> 표는 그림으로 설명
+        temp = even
+
         while even and even.next:
             odd.next = even.next
             odd = odd.next
             even.next = odd.next
             even = even.next
         
-        odd.next = # 짝수 값의 포인터를 가르쳐야 하는데 새로운 linked list 생성없이 어떻게 하는지 모르겠음
+        odd.next = temp
+        
         return head
 
 """
-못품
+Runtime 36 ms
+Memory 19.2 MB
 """
