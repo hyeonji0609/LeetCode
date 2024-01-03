@@ -10,28 +10,30 @@ class Solution:
         if not head:
             return head
         
-        stack = []
+        stack = [] # 저장 stack 리스트
         while head:
             stack.append(head.val)  # 현재 값을 링크드 리스트에 넣기
             head = head.next # 다음 것에 연결하기
         
-        even_ls, odd_ls = [],[] # 짝홀 인덱스 구분
+        even_ls, odd_ls = [],[] # 짝홀 인덱스 구분할 리스트
 
         for i in range(len(stack)):
-            if i % 2 ==0: # 나눠서 0은 짝수 인덱스
+            # 나머지가 0이면 짝수이므로 짝수 리스트에 넣기
+            if i % 2 ==0:
                 even_ls.append(stack[i])
-            else: # 아니라면 홀수 인덱스
+            # 아니라면 홀수 리스트에 넣기
+            else: 
                 odd_ls.append(stack[i])
 
 
         top = ListNode(stack[0]) # 초기 선언
         current = top # current에 담아주고
 
-        # 짝수먼저 돌려주기
+        # 짝수먼저 돌려주면서 연결하기
         for i in even_ls[1:]:
             current.next = ListNode(i)
             current = current.next
-        # 그 다음 홀수 돌려주기
+        # 그 다음 홀수 연결하기
         for i in odd_ls:
             current.next = ListNode(i)
             current = current.next
@@ -45,8 +47,9 @@ memory : 19.9 mb # 하위 95%............
 '''
 
 # 2 O(1) 1개만 추가로 허용한다 해서 stack 하나만 가지고 풀었습니다.
+# 사실 1개만 만드는게 O(1)인지는 잘 모르겠습니다ㅠ
 
-import math
+import math # 올림 처리를 하기 위해 math import
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
