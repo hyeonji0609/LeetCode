@@ -40,4 +40,9 @@ class BrowserHistory:
             else:
                 break
         return self.current
-        
+
+
+'''
+runtime : 206ms beats 70%!!
+memory : 19.8  beats 18%...?
+'''
