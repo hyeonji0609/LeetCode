@@ -24,6 +24,11 @@ class Solution:
                     break
             
         return "Radiant" if senate[0] =="R" else "Dire"
+    
+"""
+runtime : 306ms / beats 15%..?
+memory : 17.68MB / beaets 18..?
+"""
                 
                 
             
