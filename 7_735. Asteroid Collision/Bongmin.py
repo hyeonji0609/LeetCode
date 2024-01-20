@@ -46,3 +46,23 @@ class Solution:
 남은 -2와 2가 만나 폭발해서 빈 리스트를 반환해야하는 게 아닌가요 ?
 '''
 
+class Solution:
+    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+        stack = []
+        for a in asteroids:
+            # 스택이 존재하고, 들어오는 애는 왼쪽인데, 스택에 마지막은 오른쪽으로 이동중에
+            while stack and a < 0 < stack[-1]:
+                # 크기 비교하기
+                if stack[-1] < abs(a): # 들어오는애가 더 크다면
+                    stack.pop()  # 스택 마지막을 pop
+                elif stack[-1] == abs(a): # 같다면
+                    stack.pop()  # 둘 다 폭발.
+                    break  
+                else: # 스택에 남아있는 친구가 더 크다면
+                    break # 그냥 머추기
+
+            else:
+                # 폭발 조건에 맞지 않는 친구들은 그냥 어펜드
+                stack.append(a)
+
+        return stack
