@@ -128,3 +128,7 @@ class MyCircularDeque:
         else:
             return False
         
+'''
+Runtime : 60ms : beats : 78.66%
+Memory : 17.10ms : beats : 75.16%
+'''
