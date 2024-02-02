@@ -1,3 +1,4 @@
+from itertools import combinations
 class Solution:
     def maxScore(self, nums1: List[int], nums2: List[int], k: int) -> int:
         idx_ls = [x for x in range(len(nums1))]
@@ -11,4 +12,4 @@ class Solution:
                 res = total
         return res
 # 메모리 에러
-
+# 아직 못풀었습니다 ㅠ
