@@ -25,3 +25,8 @@ class SmallestInfiniteSet:
         if num <= self.cnt and num not in self.heap:
             heapq.heappush(self.heap, num)
         return None
+
+'''
+runtime : 91ms : beats : 85.40%
+memory : 17.43mb : beats : 53.53%
+'''
