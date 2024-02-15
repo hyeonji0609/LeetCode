@@ -11,3 +11,7 @@ class Solution:
             return True
         else:
             return False
+"""
+runtime : 41ms : beats : 57.56%
+memory : 16.56mb : beats : 98.35%
+"""
