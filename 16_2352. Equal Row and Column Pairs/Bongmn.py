@@ -31,9 +31,7 @@ class Solution:
         return cnt
             
 
-        
-        
-        
-
-s = Solution()
-s.equalPairs(grid)
+'''
+Runtime : 544ms : beats : 24.49%
+Memory : 22.28 : beats : 24.79%
+''' 
