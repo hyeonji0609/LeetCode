@@ -21,3 +21,8 @@ class Solution:
                 return max(left, right)
 
             return dfs(root, 0)
+'''
+Runtime : 31ms beats : 96.59%
+memory : 17.68 beats : 62.69
+
+'''
