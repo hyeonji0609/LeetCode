@@ -47,3 +47,8 @@ class Solution:
 
         # 삭제 후 루트를 업데이트
         return _delete(root, key)
+    
+"""
+runtime : 55ms / beats : 66.29 %
+momory : 19.76mb / beats : 96.42 % 
+"""
