@@ -12,6 +12,7 @@ class Solution:
             # 노드가 없으면 count를 반환
             if not node:
                 return count
+            # 노드가 있다면 이전의 맥스 값보다 현재 값이 더 좋으면 good 노드
             if node.val >= max_val:
                 count +=1 
 
@@ -24,7 +25,7 @@ class Solution:
 
             return count
 
-        # 초기 최대 값으로 음의 무한대를 사용하여 루트에서 DFS 시작
+        # 초기 값으로 -inf를 주고 시작
         return _preorder(root, float('-inf'), 0)
     
 '''
