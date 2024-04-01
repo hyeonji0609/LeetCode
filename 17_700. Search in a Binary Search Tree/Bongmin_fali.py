@@ -23,4 +23,19 @@ class Solution:
 '''
             
             
+'''
+fail 인 줄 알았으나
+return bst(root,val)로 해결
+'''
+
+class Solution:
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+        def bst(root,val):
+            if not root or root.val == val:
+                return root
             
+            if val < root.val:
+                return bst(root.left, val)
+            else:
+                return bst(root.right, val)
+        return bst(root,val)
