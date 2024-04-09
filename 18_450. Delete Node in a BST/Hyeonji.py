@@ -8,12 +8,12 @@ class Solution:
         if root is None:
             return
         
-        if root.val > key:
+        if root.val > key: # 만약 삭제하고 싶은 값보다 root가 크면
             root.left = self.delete(root.left, key)
-        elif root.val < key:
+        elif root.val < key: # 만약 삭제하고 싶은 값보다 root가 작으면
             root.right = self.delete(root.right, key)
-        else:
-            if root.left and root.right:
+        else: # 만약 삭제하고 싶은 값보다 root와 같으면
+            if root.left and root.right: # 만약 
                 leftmost = self.get_leftmost(root.right)
                 root.val = leftmost.val
                 root.right = self.delete(root.right, leftmost.val)
