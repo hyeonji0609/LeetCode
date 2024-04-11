@@ -37,7 +37,10 @@ class Solution:
 
         return res
 
-
+'''
+runtime : 1176ms / beats : 63.12%
+memory : 39.67mb / beats : 49.45%
+'''
 
 
 

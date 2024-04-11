@@ -18,4 +18,8 @@ class Solution:
             elif guess(mid) == 0: # 맞췄다
                 return mid
         return None
+'''
+runtime : 39ms / beats : 23%
+memory : 16.5mb / beats : 15.11%
+'''
 
