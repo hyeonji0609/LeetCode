@@ -6,7 +6,7 @@ class Solution:
             if not node:
                 return
             # 지금까지의 경로에 현재 노드를 남아주기
-            path.append(str(node.val))
+            path.append(str(node.val)) # join은 str만 취급. int따위는 취급하지 않음. 
             # node에서 왼쪽 오른쪽 모두 없다면 leaf이므로
             if not node.left and not node.right:
                 # 지금까지의 경로를 모두 -> join해서 paths(결과)에 담ㅇ주기
